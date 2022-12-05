@@ -1,5 +1,10 @@
 class CounterStates {}
 
-class InitialState extends CounterStates {}
+class InitialState extends CounterStates {
 
-class UpdateCounter extends CounterStates {}
+}
+
+class UpdateState extends CounterStates {
+  final int counter;
+  UpdateState(this.counter);
+}
